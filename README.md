@@ -8,9 +8,9 @@ Then use it short your url while sharing.
 <p>
 <h1>Setup in Gradel :</h1>
  </br>
-</t><h5>android{</br>
-    </t>compileSdkVersion 27</br>
-    </t>defaultConfig {</br>
+</t><h5>android</br>{</br>
+  </br>  </t>compileSdkVersion 27
+  </br>  </t>defaultConfig </br>{</br>
        </t> applicationId "com.sk.com.maketinyurl"</br>
        </t> minSdkVersion 15</br>
        </t> targetSdkVersion 27</br>
@@ -32,12 +32,7 @@ Then use it short your url while sharing.
     }</br>
 }</br>
 dependencies {</br>
-    implementation fileTree(include: ['*.jar'], dir: 'libs')</br>
     implementation 'com.android.support:appcompat-v7:27.1.1'</br>
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'</br>
-    testImplementation 'junit:junit:4.12'</br>
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'</br>
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'</br>
     implementation 'com.android.support:design:27.1.1'</br>
     //THIS  IS LOAD THE LIB TO YOUR PROJECT</br>
     implementation (name: 'tinyurl-version-1.0', ext:'aar')</br>
