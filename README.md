@@ -45,7 +45,7 @@ Then use it short your url while sharing.
 
 <p></br>
 <h5>:HOW TO USE THAT  :</br>
- TinyManager.getTinnyUrl() :- CONVERTIGN THE LONG URL IN TINY URL IN ASYNC , SO IT IS NOT GOING TO BLOCK YOUR OTHER TASK</br>
+ TinyManager.getTinnyUrl() :- CONVERTIGN THE LONG URL IN TINY URL IN ASYNC , SO IT IS NOT GOING TO BLOCK YOUR OTHER TASK :</br>
  TinyManager.getTinnyUrl(long_url, new TinyManager.Callback()</br>
    &nbsp;&nbsp;&nbsp;{</br>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Override</br>
