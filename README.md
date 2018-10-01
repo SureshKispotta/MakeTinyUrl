@@ -8,30 +8,33 @@ Then use it short your url while sharing.
 <p>
 <h1>Setup in Gradel :</h1>
  </br>
-</t><h5>android</br>{</br>
-  </br>  </t>compileSdkVersion 27
-  </br>  </t>defaultConfig </br>{</br>
-       </t> applicationId "com.sk.com.maketinyurl"</br>
-       </t> minSdkVersion 15</br>
-       </t> targetSdkVersion 27</br>
-       </t> versionCode 1</br>
-       </t> versionName "1.0"</br>
-       </t> testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"</br>
-  </t>  }</br>
-   </t> buildTypes {</br>
-     </t>   release {</br>
-          </t>  minifyEnabled false</br>
-         </t>   proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'</br>
-      </t> </t> }</br>
-  </t> </t> }</br>
+&nbsp;<h5>android</br>{</br>
+  </br> &nbsp;compileSdkVersion 27
+  </br>  &nbsp;defaultConfig </br>
+  &nbsp;&nbsp;&nbsp;{</br>
+      &nbsp; applicationId "com.sk.com.maketinyurl"</br>
+       &nbsp; minSdkVersion 15</br>
+       &nbsp; targetSdkVersion 27</br>
+       &nbsp; versionCode 1</br>
+       &nbsp; versionName "1.0"</br>
+       &nbsp; testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"</br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }</br>
+   &nbsp; buildTypes</br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</br>
+     &nbsp; release</br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</br>
+          &nbsp;  minifyEnabled false</br>
+         &nbsp;   proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+  &nbsp&nbsp;}</br>
 //THIS HAS TO THERE TO LOAD FILE FROM LIB FOLDER</br>
     repositories {</br>
-        flatDir {</br>
+       &nbsp;&nbsp;&nbsp;&nbsp; flatDir {</br>
             dirs 'libs'</br>
-        }</br>
-    }</br>
-}</br>
-dependencies {</br>
+     &nbsp;&nbsp;&nbsp;&nbsp;   }</br>
+   &nbsp;&nbsp; }</br>
+&nbsp;}</br>
+</br>&nbsp;&nbsp;  dependencies {</br>
     implementation 'com.android.support:appcompat-v7:27.1.1'</br>
     implementation 'com.android.support:design:27.1.1'</br>
     //THIS  IS LOAD THE LIB TO YOUR PROJECT</br>
@@ -44,18 +47,18 @@ dependencies {</br>
 <h5>:HOW TO USE THAT  :</br>
  TinyManager.getTinnyUrl() :- CONVERTIGN THE LONG URL IN TINY URL IN ASYNC , SO IT IS NOT GOING TO BLOCK YOUR OTHER TASK</br>
  TinyManager.getTinnyUrl(long_url, new TinyManager.Callback()</br>
-        {</br>
-            @Override</br>
-            public void onSuccess(String url)</br>
-            {</br>
-              //URL CONTAINS THE TINY URL</br>
-            }</br>
-            @Override</br>
-            public void onError(String error)</br>
-            {</br>
+   &nbsp;&nbsp;&nbsp;{</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Override</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void onSuccess(String url)</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    //URL CONTAINS THE TINY URL</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;}</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  @Override</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void onError(String error)</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</br>
       /IF ERROR HAPPEN THEN YOU WILL GET HERE</br>
-            }</br>
-        });</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }</br>
+    &nbsp;  });</br>
      </p>   
         </h5>
         
